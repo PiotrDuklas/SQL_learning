@@ -5,7 +5,7 @@
 funkcja describe nazwa_tabeli daje podgląd
 funkcja date_format(nazwa_kolumny którą chcemy zmienić)*/
 
-Aggregate functions - examples:
+/*Aggregate functions - examples:
 • AVG() - Returns the average value
 • STDEV() - Returns the standard deviation value
 • COUNT() - Returns the number of rows
@@ -52,4 +52,4 @@ Here are some useful functions for mathematics and statistics in SQL Server:
 • SQRT
 • STDEV
 • MEAN
-• AVG
+• AVG*/
