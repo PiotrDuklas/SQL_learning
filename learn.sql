@@ -41,7 +41,7 @@ CHARINDEX
 LTRIM
 RTRIM
 
-
+VERSION(), CURRENT_DATE;
 
 Inner join lub join - część wspólna z 2 tabel: tcustomers i tsales
 SELECT c.*, s.* from tcustomers c join tsales s on c.customer_id = s.customer_id;
@@ -55,3 +55,41 @@ SELECT c.*, s.* from tcustomers c right join tsales s on c.customer_id = s.custo
 Cross join - iloczyn kartezjański
 SELECT c.*, s.* from tcustomers c cross join tsales s
  
+
+
+CASE statement
+
+SELECT DISTINCT
+    first_name,
+    last_name,
+    birth_date,
+    gender,
+    CASE gender
+        WHEN 'M' THEN 'Mężczyzna'
+        WHEN 'F' THEN 'Kobieta'
+        ELSE '?'
+    END AS 'Płeć'
+FROM
+    employees
+ORDER BY first_name DESC
+LIMIT 100;
+
+
+SELECT 
+    *
+FROM
+    tcustomers 
+UNION SELECT 
+    *
+FROM
+    tsales;
+
+
+    SELECT 
+    *
+FROM
+    tcustomers 
+UNION ALL SELECT 
+    *
+FROM
+    tsales;
