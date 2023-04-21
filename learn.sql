@@ -2,6 +2,12 @@
 
 /*Tworzenie bazy danych i tabel
 
+tworzenie tabeli z innej tabeli
+
+CREATE TABLE table_name AS
+SELECT *
+from original_table_name;
+
 funkcja describe nazwa_tabeli daje podgląd
 funkcja date_format(nazwa_kolumny którą chcemy zmienić)*/
 
